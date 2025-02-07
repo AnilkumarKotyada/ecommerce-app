@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 
-const adminAuth = async (req, res, next) =>{ //next will be your call back function
+const adminAuth = async (req, res, next) =>{ 
    try {
     const { token } = req.headers
     if (!token) {
